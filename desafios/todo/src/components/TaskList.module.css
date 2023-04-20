@@ -1,0 +1,40 @@
+.tasklist {
+  max-width: 736px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: -1.7rem auto 4rem;
+}
+
+.tasklist header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  margin-top: 4rem;
+}
+
+header .TasksCreated {
+  color: var(--blue-200);
+}
+
+header .TasksCreated span,
+header .tasksCompleted span {
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 999px;
+  padding: 0.013rem 0.8rem;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+header .tasksCompleted {
+  color: var(--purple-200);
+}
+
+.tasklist main ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+}
+

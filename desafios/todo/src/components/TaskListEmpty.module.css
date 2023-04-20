@@ -1,0 +1,15 @@
+.listEmpty {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  color: var(--gray-300);
+  border-top: 1px solid var(--gray-400);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  padding: 4rem 4rem 0;
+}
+
+.listEmpty svg {
+  margin-bottom: 1rem;
+  color: #313131;
+}
