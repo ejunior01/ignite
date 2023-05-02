@@ -1,4 +1,4 @@
-.task {
+.todoitem {
   background-color: var(--gray-500);
   border: 1px solid var(--gray-400);
   width: 100%;
@@ -13,7 +13,7 @@
   text-decoration: none;
 }
 
-.task input[type="checkbox"] {
+.todoitem input[type="checkbox"] {
   appearance: none;
   background-color: transparent;
   cursor: pointer;
@@ -29,12 +29,12 @@
 
 }
 
-.task input[type="checkbox"]:checked {
+.todoitem input[type="checkbox"]:checked {
   background-color: var(--purple-700);
   border: 2px solid var(--purple-700);
 }
 
-.task input[type="checkbox"]:checked::before {
+.todoitem input[type="checkbox"]:checked::before {
   content: "";
   position: absolute;
   top: 0.07rem;
@@ -45,7 +45,7 @@
   transform: rotate(35deg);
 }
 
-.task .content {
+.todoitem .content {
   line-height: 1.4;
   font-size: 0.875rem;
   color: var(--gray-100);
@@ -54,16 +54,16 @@
   flex: 1;
 }
 
-.task:has(input[type="checkbox"]:checked) {
+.todoitem:has(input[type="checkbox"]:checked) {
   border: 1px solid var(--gray-500);
 }
 
-.task:has(input[type="checkbox"]:checked) .content {
+.todoitem:has(input[type="checkbox"]:checked) .content {
   text-decoration: line-through;
   color: var(--gray-300);
 }
 
-.task .removeTask {
+.todoitem .deletetodoitem {
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -71,6 +71,6 @@
   transition: 500ms color;
 }
 
-.task .removeTask:hover {
+.todoitem .deletetodoitem:hover {
   color: var(--danger);
 }

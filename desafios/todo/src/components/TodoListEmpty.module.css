@@ -1,4 +1,4 @@
-.listEmpty {
+.todolistempty {
   display: flex;
   place-items: center;
   flex-direction: column;
@@ -7,9 +7,10 @@
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
   padding: 4rem 4rem 0;
+  text-align: center;
 }
 
-.listEmpty svg {
+.todolistempty svg {
   margin-bottom: 1rem;
   color: #313131;
 }

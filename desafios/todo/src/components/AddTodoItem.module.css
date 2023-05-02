@@ -1,10 +1,10 @@
-.newtask {
+.addTodo {
   display: flex;
   width: 100%;
   gap: 0.5rem;
 }
 
-.newtask > input {
+.addTodo > input {
   flex: 1;
   background-color: var(--gray-500);
   border: 1px solid var(--gray-700);
@@ -13,11 +13,11 @@
   color: var(--gray-100);
 }
 
-.newtask > input::placeholder {
+.addTodo > input::placeholder {
   color: var(--gray-300);
 }
 
-.newtask button[type="submit"] {
+.addTodo button[type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +31,6 @@
   transition: 500ms opacity;
 }
 
-.newtask button[type="submit"]:hover {
+.addTodo button[type="submit"]:hover {
   opacity: 0.9;
 }

@@ -1,12 +1,11 @@
 import { ClipboardText } from "@phosphor-icons/react";
-
-import style from "./TaskListEmpty.module.css";
 import { motion } from "framer-motion";
+import style from "./TodoListEmpty.module.css";
 
-export function TaskListEmpty() {
+export function TodoListEmpty() {
   return (
     <motion.div
-      className={style.listEmpty}
+      className={style.todolistempty}
       initial={{ opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       exit={{ scale: 0.8, opacity: 0 }}

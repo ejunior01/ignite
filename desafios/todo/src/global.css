@@ -14,6 +14,7 @@
   --gray-200: #d9d9d9;
   --gray-100: #f2f2f2;
 
+  color-scheme: dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
