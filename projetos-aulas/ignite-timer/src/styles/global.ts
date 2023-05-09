@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
+    width:100vw;
     background-color: ${(props) => props.theme['gray-900']};
     color: ${(props) => props.theme['gray-300']};
 }
@@ -22,4 +23,11 @@ body, input, textarea, button {
     font-weight:400;
     font-size:1rem;
 }
+
+#root {
+    width:100%;
+    display: flex;
+    align-items:center;
+}
+
 `
