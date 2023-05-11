@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
+
 * {
     margin:0;
     padding: 0;
@@ -28,6 +29,7 @@ body, input, textarea, button {
     width:100%;
     display: flex;
     align-items:center;
+    justify-content:center;
 }
 
 `
