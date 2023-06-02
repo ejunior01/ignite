@@ -45,6 +45,11 @@ const BaseInput = styled.input`
     box-shadow: none;
     border-color: ${(props) => props.theme['green-500']};
   }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
 `
 export const TaksInput = styled(BaseInput)`
   flex: 1;
@@ -82,7 +87,7 @@ export const Separator = styled.div`
   justify-content: center;
 `
 
-export const StartCountdownButton = styled.button`
+const BaseCountdownButton = styled.button`
   width: 100%;
   border: 0;
   border-radius: 8px;
@@ -97,7 +102,6 @@ export const StartCountdownButton = styled.button`
 
   cursor: pointer;
 
-  background-color: ${(props) => props.theme['green-500']};
   color: ${(props) => props.theme['gray-100']};
 
   transition: background 500ms;
@@ -106,8 +110,22 @@ export const StartCountdownButton = styled.button`
     opacity: 0.7;
     cursor: not-allowed;
   }
+`
 
+export const StartCountdownButton = styled(BaseCountdownButton)`
+  background-color: ${(props) => props.theme['green-500']};
   &:not(:disabled):hover {
     background-color: ${(props) => props.theme['green-700']};
+  }
+`
+export const StopCountdownButton = styled(BaseCountdownButton)`
+  background-color: ${(props) => props.theme['red-500']};
+  &:not(:disabled):hover {
+    background-color: ${(props) => props.theme['red-700']};
+  }
+
+  :focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px ${(props) => props.theme['red-700']};
   }
 `
