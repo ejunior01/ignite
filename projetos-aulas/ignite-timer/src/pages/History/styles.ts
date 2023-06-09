@@ -18,6 +18,9 @@ export const HistoryList = styled.div`
   margin-top: 1.5rem;
   max-height: 18rem;
 
+  display: flex;
+  flex-direction: column;
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -56,6 +59,11 @@ export const HistoryList = styled.div`
       }
     }
   }
+`
+
+export const EmptyTable = styled.div`
+  flex: 1;
+  background-color: ${(props) => props.theme['gray-700']};
 `
 
 const STATUS_COLOR = {
