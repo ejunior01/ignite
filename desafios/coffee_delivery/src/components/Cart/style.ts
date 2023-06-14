@@ -9,7 +9,12 @@ export const CartContainer = styled.div`
   display: grid;
   place-items: center;
 
-  svg {
-    color: ${(props) => props.theme.color['yellow-dark']};
+  cursor: pointer;
+  color: ${(props) => props.theme.color['yellow-dark']};
+  transition: 500ms background-color, color;
+
+  &:hover {
+    background-color: ${(props) => props.theme.color.yellow};
+    color: ${(props) => props.theme.color['yellow-light']};
   }
 `

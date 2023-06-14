@@ -20,4 +20,11 @@ export const HeaderContainer = styled.header`
 
 export const Logo = styled.a`
   display: flex;
+  cursor: pointer;
+
+  transition: 100ms transform;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `
