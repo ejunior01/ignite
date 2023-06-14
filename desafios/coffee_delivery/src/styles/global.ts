@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-text-size-adjust: 100%;
 
     line-height: 1.3;
+    font-size:14px;
 }
 
 * {
