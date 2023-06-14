@@ -35,7 +35,7 @@ export const HighLightContainer = styled.div`
 
   ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 1.25rem;
     column-gap: 2.5rem;
