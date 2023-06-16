@@ -9,8 +9,10 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
 
+    font-weight:400;
     line-height: 1.3;
     font-size:16px;
+    
 }
 
 * {
@@ -30,8 +32,21 @@ body {
     background-color: ${(props) => props.theme.color.background};
 }
 
+h1,h2,h3 {
+    font-family: 'Baloo 2', cursive;
+}
+
 #root {
    width: 70rem;
+}
+
+@media only screen and (max-device-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+    #root {
+        width: 65rem;
+    }
 }
 
 `

@@ -1,9 +1,14 @@
 import { ShoppingCart } from '@phosphor-icons/react'
 import { CartContainer } from './style'
 
-export function Cart() {
+interface CartProps {
+  backgroudColor: 'yellow' | 'purple'
+  fontColor: 'yellow' | 'white'
+}
+
+export function Cart({ backgroudColor, fontColor }: CartProps) {
   return (
-    <CartContainer>
+    <CartContainer backgroudColor={backgroudColor} fontColor={fontColor}>
       <ShoppingCart size={22} weight="fill" />
     </CartContainer>
   )

@@ -21,80 +21,21 @@ export const defaultTheme = {
     'base-input': '#EDEDED',
     'base-card': '#F3F2F2',
   },
+
   font: {
-    TitleXL: {
-      size: '3rem',
-      LineHeight: 1.3,
-      Weight: 800,
-    },
-
-    TitleL: {
-      size: '2rem',
-      LineHeight: 1.3,
-      Weight: 800,
-    },
-    TitleM: {
-      size: '1.5rem',
-      LineHeight: 1.3,
-      Weight: 800,
-    },
-    TitleS: {
-      size: '1.25rem',
-      LineHeight: 1.3,
-      Weight: 700,
-    },
-    TitleXS: {
-      size: '1.125rem',
-      LineHeight: 1.3,
-      Weight: 700,
-    },
-
-    TextLBold: {
-      size: '1.25rem',
-      LineHeight: 1.3,
-      Weight: 700,
-    },
-    TextMBold: {
-      size: '1rem',
-      LineHeight: 1.3,
-      Weight: 700,
-    },
-
-    TextLRegular: {
-      size: '1.25rem',
-      LineHeight: 1.3,
-      Weight: 400,
-    },
-    TextMRegular: {
-      size: '1rem',
-      LineHeight: 1.3,
-      Weight: 400,
-    },
-    TextS: {
-      size: '0.875rem',
-      LineHeight: 1.3,
-      Weight: 400,
-    },
-    TextXS: {
-      size: '0.75rem',
-      LineHeight: 1.3,
-      Weight: 700,
-    },
-
-    Tag: {
-      size: '0.625rem',
-      LineHeight: 1.3,
-      Weight: 700,
-    },
-    ButtonG: {
-      size: '0.875rem',
-      LineHeight: 1.6,
-      Weight: 700,
-    },
-    ButtonM: {
-      size: '0.75rem',
-      LineHeight: 1.6,
-      Weight: 400,
-    },
+    TitleXL: "800 3rem/1.3 'Baloo 2', cursive",
+    TitleL: "800 2rem/1.3 'Baloo 2', cursive",
+    TitleM: "800 1.5rem/1.3 'Baloo 2', cursive",
+    TitleS: "700 1.25rem/1.3 'Baloo 2', cursive",
+    TitleXS: "700 1.125rem/1.3 'Baloo 2', cursive",
+    TextLBold: "700 1.125rem/1.3 'Roboto', sans-serif",
+    TextMBold: "700 1rem/1.3 'Roboto', sans-serif",
+    TextLRegular: "400 1.25rem/1.3 'Roboto', sans-serif",
+    TextMRegular: "400 1rem/1.3 'Roboto', sans-serif",
+    TextS: "400 0.875rem/1.3 'Roboto', sans-serif",
+    TextXS: "700 0.75rem/1.3 'Roboto', sans-serif",
+    Tag: "700 0.625rem/1.3 'Roboto', sans-serif",
+    ButtonG: "700 0.875rem/1.6 'Roboto', sans-serif",
+    ButtonM: "400 0.75rem/1.6 'Roboto', sans-serif",
   },
 }

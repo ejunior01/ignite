@@ -12,7 +12,7 @@ export function Header() {
         </Logo>
         <div>
           <Location />
-          <Cart />
+          <Cart backgroudColor="yellow" fontColor="yellow" />
         </div>
       </nav>
     </HeaderContainer>

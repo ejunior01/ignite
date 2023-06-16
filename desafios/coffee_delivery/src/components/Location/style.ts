@@ -8,9 +8,7 @@ export const LocationContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-
-  font-size: ${(props) => props.theme.font.TextS.size};
-  font-weight: ${(props) => props.theme.font.TextS.Weight};
+  font: ${(props) => props.theme.font.TextS};
   color: ${(props) => props.theme.color['purple-dark']};
 
   svg {

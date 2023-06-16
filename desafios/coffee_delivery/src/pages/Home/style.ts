@@ -10,23 +10,22 @@ export const Intro = styled.section`
 
   grid-template-areas: 'title banner' 'highLights banner';
 
-  margin-top: 5.875rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 `
 export const Title = styled.div`
   grid-area: title;
 
   h1 {
     color: ${(props) => props.theme.color['base-title']};
-    font-size: ${(props) => props.theme.font.TitleXL.size};
-    font-weight: ${(props) => props.theme.font.TitleXL.Weight};
-    font-family: 'Baloo 2', cursive;
+    font: ${(props) => props.theme.font.TitleXL};
     margin-bottom: 1rem;
   }
 
   p {
     color: ${(props) => props.theme.color['base-subtitle']};
-    font-size: ${(props) => props.theme.font.TextLRegular.size};
-    font-weight: ${(props) => props.theme.font.TextLRegular.Weight};
+    font: ${(props) => props.theme.font.TextLRegular};
+
     width: 90%;
   }
 `
@@ -60,8 +59,7 @@ export const HighLight = styled.li<HighLightColorProps>`
   gap: 0.75rem;
 
   color: ${(props) => props.theme.color['base-text']};
-  font-size: ${(props) => props.theme.font.TextMRegular.size};
-  font-weight: ${(props) => props.theme.font.TextMRegular.Weight};
+  font: ${(props) => props.theme.font.TextMRegular};
 
   div {
     width: 2rem;
@@ -87,3 +85,23 @@ export const Banner = styled.div`
     height: 100%;
   }
 `
+
+export const CoffeeList = styled.div`
+  margin-bottom: 9.8125rem;
+
+  & > h2 {
+    font: ${(props) => props.theme.font.TitleL};
+    color: ${(props) => props.theme.color['base-subtitle']};
+    margin-bottom: 3.375rem;
+  }
+`
+
+export const ListContainer = styled.ul`
+  list-style-type: none;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 2.5rem;
+  column-gap: 2rem;
+`
+export const ListItem = styled.li``

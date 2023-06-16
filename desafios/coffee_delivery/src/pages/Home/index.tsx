@@ -1,14 +1,18 @@
 import { Header } from '../../components/Header'
 import {
   Banner,
+  CoffeeList,
   HighLight,
   HighLightContainer,
   HomeContainer,
   Intro,
+  ListContainer,
+  ListItem,
   Title,
 } from './style'
 import CoffeeBanner from '../../assets/coffee-banner.png'
 import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
+import { CoffeeCard } from '../../components/CoffeeCard'
 
 export function Home() {
   return (
@@ -57,6 +61,35 @@ export function Home() {
           />
         </Banner>
       </Intro>
+      <CoffeeList>
+        <h2>Nossos cafés</h2>
+        <ListContainer>
+          <ListItem>
+            <CoffeeCard />
+          </ListItem>
+          <ListItem>
+            <CoffeeCard />
+          </ListItem>
+          <ListItem>
+            <CoffeeCard />
+          </ListItem>
+          <ListItem>
+            <CoffeeCard />
+          </ListItem>
+          <ListItem>
+            <CoffeeCard />
+          </ListItem>
+          <ListItem>
+            <CoffeeCard />
+          </ListItem>
+          <ListItem>
+            <CoffeeCard />
+          </ListItem>
+          <ListItem>
+            <CoffeeCard />
+          </ListItem>
+        </ListContainer>
+      </CoffeeList>
     </HomeContainer>
   )
 }
