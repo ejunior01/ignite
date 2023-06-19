@@ -1,4 +1,3 @@
-import { Header } from '../../components/Header'
 import {
   Banner,
   CoffeeList,
@@ -17,7 +16,6 @@ import { CoffeeCard } from '../../components/CoffeeCard'
 export function Home() {
   return (
     <HomeContainer>
-      <Header />
       <Intro>
         <Title>
           <h1>Encontre o café perfeito para qualquer hora do dia</h1>
@@ -28,25 +26,25 @@ export function Home() {
         </Title>
         <HighLightContainer>
           <ul>
-            <HighLight highLightColor="yellowDark">
+            <HighLight highlightcolor="yellowDark">
               <div>
                 <ShoppingCart size={16} weight="fill" />
               </div>
               Compra simples e segura
             </HighLight>
-            <HighLight highLightColor="gray">
+            <HighLight highlightcolor="gray">
               <div>
                 <Package size={16} weight="fill" />
               </div>
               Embalagem mantém o café intacto
             </HighLight>
-            <HighLight highLightColor="yellow">
+            <HighLight highlightcolor="yellow">
               <div>
                 <Timer size={16} weight="fill" />
               </div>
               Entrega rápida e rastreada
             </HighLight>
-            <HighLight highLightColor="purple">
+            <HighLight highlightcolor="purple">
               <div>
                 <Coffee size={16} weight="fill" />
               </div>

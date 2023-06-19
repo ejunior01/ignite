@@ -36,7 +36,7 @@ export function CoffeeCard() {
             <span>1</span>
             <Plus size={14} weight="bold" />
           </Counter>
-          <Cart backgroudColor="purple" fontColor="white" />
+          <Cart backgroudCart="purple" fontColorCart="white" />
         </Buy>
       </div>
     </CoffeeCardContainer>

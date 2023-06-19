@@ -79,8 +79,13 @@ export const Counter = styled.div`
 
   font: ${(props) => props.theme.font.TextMRegular};
   color: ${(props) => props.theme.color.purple};
+
   span {
     color: ${(props) => props.theme.color['base-title']};
+  }
+
+  svg {
+    cursor: pointer;
   }
 
   svg:hover {

@@ -1,15 +1,18 @@
 import { ShoppingCart } from '@phosphor-icons/react'
 import { CartContainer } from './style'
+import { Link } from 'react-router-dom'
 
 interface CartProps {
-  backgroudColor: 'yellow' | 'purple'
-  fontColor: 'yellow' | 'white'
+  backgroudCart: 'yellow' | 'purple'
+  fontColorCart: 'yellow' | 'white'
 }
 
-export function Cart({ backgroudColor, fontColor }: CartProps) {
+export function Cart({ backgroudCart, fontColorCart }: CartProps) {
   return (
-    <CartContainer backgroudColor={backgroudColor} fontColor={fontColor}>
-      <ShoppingCart size={22} weight="fill" />
-    </CartContainer>
+    <Link to="/checkout">
+      <CartContainer backgroud={backgroudCart} color={fontColorCart}>
+        <ShoppingCart size={22} weight="fill" />
+      </CartContainer>
+    </Link>
   )
 }

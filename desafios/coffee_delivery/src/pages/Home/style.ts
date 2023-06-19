@@ -50,7 +50,7 @@ const HIGH_LIGHT_COLOR = {
 } as const
 
 interface HighLightColorProps {
-  highLightColor: keyof typeof HIGH_LIGHT_COLOR
+  highlightcolor: keyof typeof HIGH_LIGHT_COLOR
 }
 
 export const HighLight = styled.li<HighLightColorProps>`
@@ -70,7 +70,7 @@ export const HighLight = styled.li<HighLightColorProps>`
 
     border-radius: 50%;
     background-color: ${(props) =>
-      props.theme.color[HIGH_LIGHT_COLOR[props.highLightColor]]};
+      props.theme.color[HIGH_LIGHT_COLOR[props.highlightcolor]]};
 
     svg {
       color: ${(props) => props.theme.color.white};

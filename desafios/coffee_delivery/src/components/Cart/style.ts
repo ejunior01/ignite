@@ -10,14 +10,14 @@ const CART_FONT_COLOR = {
   white: 'white',
 } as const
 
-interface cartColorProps {
-  backgroudColor: keyof typeof CART_BG_COLOR
-  fontColor: keyof typeof CART_FONT_COLOR
+interface CartColorProps {
+  backgroud: keyof typeof CART_BG_COLOR
+  color: keyof typeof CART_FONT_COLOR
 }
 
-export const CartContainer = styled.div<cartColorProps>`
+export const CartContainer = styled.div<CartColorProps>`
   background-color: ${(props) =>
-    props.theme.color[CART_BG_COLOR[props.backgroudColor]]};
+    props.theme.color[CART_BG_COLOR[props.backgroud]]};
   border-radius: 6px;
   height: 2.375rem;
   width: 2.375rem;
@@ -26,7 +26,7 @@ export const CartContainer = styled.div<cartColorProps>`
   place-items: center;
 
   cursor: pointer;
-  color: ${(props) => props.theme.color[CART_FONT_COLOR[props.fontColor]]};
+  color: ${(props) => props.theme.color[CART_FONT_COLOR[props.color]]};
   transition: 500ms opacity;
 
   &:hover {

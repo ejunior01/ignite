@@ -18,7 +18,7 @@ export const HeaderContainer = styled.header`
   }
 `
 
-export const Logo = styled.a`
+export const Logo = styled.div`
   display: flex;
   cursor: pointer;
 
