@@ -1,25 +1,52 @@
 import { styled } from 'styled-components'
 
-export const HomeContainer = styled.div``
+export const HomeContainer = styled.div`
+  display: grid;
+  grid-template-rows: 30% 1fr;
+  gap: 3rem;
+
+  @media only screen and (max-device-width: 1024px) {
+    grid-template-rows: 20% 1fr;
+  }
+
+  @media only screen and (max-device-width: 768px) {
+    grid-template-rows: 16% 1fr;
+    gap: 6rem;
+  }
+
+  @media only screen and (max-device-width: 320px) {
+    grid-template-rows: 20% 1fr;
+    gap: 1.5rem;
+  }
+`
 
 export const Intro = styled.section`
   display: grid;
   grid-template-columns: 56% 1fr;
-  grid-template-rows: 70% 1fr;
   column-gap: 3.375rem;
 
-  grid-template-areas: 'title banner' 'highLights banner';
-
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  @media only screen and (max-device-width: 425px) {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
 `
-export const Title = styled.div`
-  grid-area: title;
 
+export const ContainerInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+`
+
+export const Title = styled.div`
   h1 {
     color: ${(props) => props.theme.color['base-title']};
     font: ${(props) => props.theme.font.TitleXL};
     margin-bottom: 1rem;
+
+    @media only screen and (max-device-width: 1024px) {
+      font: ${(props) => props.theme.font.TitleL};
+    }
   }
 
   p {
@@ -30,8 +57,6 @@ export const Title = styled.div`
   }
 `
 export const HighLightContainer = styled.div`
-  grid-area: highLights;
-
   ul {
     display: grid;
     grid-template-columns: 40% 1fr;
@@ -39,6 +64,13 @@ export const HighLightContainer = styled.div`
     row-gap: 1.25rem;
     column-gap: 2.5rem;
     list-style: none;
+
+    @media only screen and (max-device-width: 320px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
   }
 `
 
@@ -65,8 +97,9 @@ export const HighLight = styled.li<HighLightColorProps>`
     width: 2rem;
     height: 2rem;
 
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     border-radius: 50%;
     background-color: ${(props) =>
@@ -74,15 +107,38 @@ export const HighLight = styled.li<HighLightColorProps>`
 
     svg {
       color: ${(props) => props.theme.color.white};
+      max-width: 90%;
+      height: auto;
+    }
+
+    @media only screen and (max-device-width: 425px) {
+      width: 2.8rem;
+      height: 2rem;
+    }
+
+    @media only screen and (max-device-width: 320px) {
+      width: 2rem;
+      height: 2rem;
     }
   }
 `
 
 export const Banner = styled.div`
-  grid-area: banner;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media only screen and (max-device-width: 425px) {
+    img {
+      max-width: 60%;
+      height: auto;
+      object-fit: cover;
+    }
   }
 `
 
@@ -98,10 +154,18 @@ export const CoffeeList = styled.div`
 
 export const ListContainer = styled.ul`
   list-style-type: none;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 2.5rem;
   column-gap: 2rem;
+
+  @media only screen and (max-device-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media only screen and (max-device-width: 425px) {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
 `
 export const ListItem = styled.li``

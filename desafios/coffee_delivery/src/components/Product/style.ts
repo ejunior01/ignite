@@ -1,27 +1,29 @@
 import { styled } from 'styled-components'
 
-export const CoffeeCardContainer = styled.div`
-  padding: 0 1.5rem 1.25rem;
-  display: grid;
-  grid-template-rows: 35% 1fr;
+export const ProductContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   row-gap: 0.75rem;
 
   border-radius: 6px 36px 6px 36px;
   background-color: ${(props) => props.theme.color['base-card']};
   height: 19.375rem;
-`
+  width: 16rem;
+  padding: 1.25rem;
 
-export const Name = styled.h2`
-  font: ${(props) => props.theme.font.TitleS};
-  color: ${(props) => props.theme.color['base-subtitle']};
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-`
-export const Description = styled.p`
-  font: ${(props) => props.theme.font.TextS};
-  color: ${(props) => props.theme.color['base-label']};
-  text-align: center;
+  h2 {
+    font: ${(props) => props.theme.font.TitleS};
+    color: ${(props) => props.theme.color['base-subtitle']};
+  }
+
+  P {
+    font: ${(props) => props.theme.font.TextS};
+    color: ${(props) => props.theme.color['base-label']};
+    text-align: center;
+  }
 `
 
 export const Tags = styled.div`
@@ -58,8 +60,6 @@ export const Price = styled.div`
   justify-content: center;
   gap: 0.25rem;
 
-  margin-right: 1rem;
-
   font: ${(props) => props.theme.font.TextS};
   color: ${(props) => props.theme.color['base-text']};
 
@@ -68,7 +68,7 @@ export const Price = styled.div`
   }
 `
 
-export const Counter = styled.div`
+export const ProductActionContainer = styled.div`
   display: flex;
   align-items: center;
   column-gap: 0.6rem;
@@ -84,6 +84,10 @@ export const Counter = styled.div`
     color: ${(props) => props.theme.color['base-title']};
   }
 
+  strong {
+    font: ${(props) => props.theme.font.ButtonM};
+    color: ${(props) => props.theme.color['base-text']};
+  }
   svg {
     cursor: pointer;
   }
@@ -93,16 +97,32 @@ export const Counter = styled.div`
   }
 `
 
-export const Coffe = styled.div`
+export const ImageContainer = styled.div`
   position: relative;
   display: grid;
+  flex: 1;
+  width: 100%;
 
   img {
-    width: 7.5rem;
-    height: 7.5rem;
+    max-width: 100%;
+    height: auto;
     position: absolute;
-    top: 40%;
+    top: 25%;
     right: 50%;
     transform: translate(50%, -50%);
+  }
+`
+
+export const RemoveCoffe = styled.div`
+  display: flex;
+  column-gap: 0.25rem;
+
+  span {
+    text-transform: uppercase;
+    font: ${(props) => props.theme.font.ButtonM};
+    color: ${(props) => props.theme.color['base-text']};
+  }
+  svg {
+    color: ${(props) => props.theme.color.purple};
   }
 `

@@ -3,7 +3,7 @@ import { styled } from 'styled-components'
 export const HeaderContainer = styled.header`
   width: 100%;
   padding: 2rem 0 0;
-
+  margin-bottom: 4rem;
   nav {
     display: flex;
     justify-content: space-between;
@@ -21,10 +21,4 @@ export const HeaderContainer = styled.header`
 export const Logo = styled.div`
   display: flex;
   cursor: pointer;
-
-  transition: 100ms transform;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 `

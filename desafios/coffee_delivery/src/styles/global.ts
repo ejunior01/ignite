@@ -26,9 +26,10 @@ body, input, textarea, button {
 }
 
 body {
+    width: 100%;
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     background-color: ${(props) => props.theme.color.background};
 }
 
@@ -37,15 +38,22 @@ h1,h2,h3 {
 }
 
 #root {
-   width: 70rem;
+    display: flex;
+    flex-direction: column;
+    width:78%;
+    max-width:70rem;
+
+}
+
+@media only screen and (max-device-width: 1024px) {
+    :root {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-device-width: 768px) {
     :root {
-        font-size: 14px;
-    }
-    #root {
-        width: 65rem;
+        font-size: 12px;
     }
 }
 
